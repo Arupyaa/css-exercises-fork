@@ -46,3 +46,29 @@ html {
   color: white;
   text-align: left;
 }
+
+/* my solution */
+
+.container{
+  display: grid;
+  grid-template-columns: 450px 1350px;
+  grid-template-rows: repeat(2,110px) 550px 110px;
+  gap: 20px;
+}
+
+.header{
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.nav{
+  grid-column: 2;
+  grid-row: 2;
+}
+.sidebar{
+  grid-column: 1;
+  grid-row: 2/span 2;
+}
+.footer{
+  grid-column: 1/-1;
+  grid-row: -1/-2;
+}
